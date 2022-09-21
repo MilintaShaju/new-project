@@ -41,13 +41,13 @@ public class utl extends WebDriverUtilities{
 		  click(By.xpath("//*[@id=\"checkout\"]"));
 		  
 		  //firstname
-		  sendkeys(By.id("first-name"),"Sabeeha");
+		  sendkeys(By.id("first-name"),"Milinta");
 		  
 		  //lastname
-		  sendkeys(By.id("last-name"),"Rahman");
+		  sendkeys(By.id("last-name"),"Shaju");
 		  
 		  //postcode
-		  sendkeys(By.id("postal-code"),"682555");
+		  sendkeys(By.id("postal-code"),"685602");
 		  
 		  //conform
 		  click(By.xpath("//*[@id=\"continue\"]"));
@@ -91,33 +91,6 @@ public class utl extends WebDriverUtilities{
 
 
 }
-package testNGpackage;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-public class WebDriverUtilities {
-public static WebDriver driver;
-	
-	public static void launchBrowser(String driverpath,String url) {
-		
-		
-		System.setProperty("webdriver.chrome.driver",driverpath);
-		driver =new ChromeDriver();
-		driver.get(url);
-		driver.manage().window().maximize();
-		
-	}
-	public void click(By value)
-	{
-		driver.findElement(value).click();
-	}
-	public void sendkeys(By value,String value1)
-	{
-		driver.findElement(value).sendKeys(value1);;
-	}
-	
-}
 
 
